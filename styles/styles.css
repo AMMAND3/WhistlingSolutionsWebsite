@@ -6,6 +6,25 @@
 }
 
 :root {
+
+  --color-primary: #000;
+  --color-secondary: #000;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #000000;
+
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.light-mode {
+
   --color-primary: #FFFFFF;
   --color-secondary: #1e2223;
   --color-white: #12181b;
@@ -16,22 +35,7 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #12181b;
   --color-grey-5: #f8f8f8;
-  --color-grey-6: #a67629;
-  --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-}
-
-.light-mode {
-  --color-primary: rgb(17, 16, 16);
-  --color-secondary: rgb(17, 16, 16);
-  --color-white: #FFFFFF;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #dbe1e8;
-  --color-grey-2: #b2becd;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #2a2e35;
+  
 }
 
 body {
@@ -193,7 +197,6 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
 }
 
 .header-content .right-header {
@@ -228,21 +231,45 @@ section {
      object-fit: cover;
 }
 
+
+
 /*About*/
 .about-container {
   display: grid;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .about-container .right-about {
   display: grid;
   grid-gap: 2rem;
+  
 }
+
+.about-container .right-about .about-item .image img {
+  width: 300px;
+  max-width: 80vw;
+  height: 300px;
+  max-height: 80vw;
+  object-fit: cover;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .about-container .right-about .about-item {
   border: 1px solid var(--color-white);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #091117;
 }
 .about-container .right-about .about-item:hover {
   cursor: default;
@@ -254,28 +281,44 @@ section {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .about-container .right-about .about-item .abt-text .large-text {
   font-size: 2rem;
   font-weight: 300;
   color: var(--color-white);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .about-container .right-about .about-item .abt-text .small-text {
   position: relative;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: rgb(6, 6, 6);
-  letter-spacing: 2px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .about-container .left-about {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   padding-right: 5rem;
 }
 .about-container .left-about p {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-white);
 }
 .about-container .left-about h4 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   font-size: 2rem;
   text-transform: uppercase;
 }
